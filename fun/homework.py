@@ -8,7 +8,7 @@ def find_greatest_number(incoming_list):
     """
     assert incoming_list == [1, 2, 3, 4, 5, 6, 7, 8]
     return_value = max(incoming_list)
-    return return_value
+    return return_valu
 
 
 def find_least_number(incoming_list):
