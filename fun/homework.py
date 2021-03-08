@@ -28,8 +28,11 @@ def add_list_numbers(incoming_list):
     """
     if incoming_list is None:
         return 0
-    total_value = sum(incoming_list)
+    else:
+        total_value = sum(incoming_list)
     return total_value
+
+
 
 
 
