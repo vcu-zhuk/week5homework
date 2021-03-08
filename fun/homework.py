@@ -17,8 +17,7 @@ def add_list_numbers(incoming_list):
     if incoming_list is None:
         return 0
     total_value = sum(incoming_list)
-    if incoming_list is not None:
-        return total_value
+    return total_value
    
 
 
