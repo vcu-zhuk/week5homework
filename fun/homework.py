@@ -2,29 +2,30 @@
 
 
 def find_greatest_number(incoming_list):
-   
-    value = max(incoming_list)
-    return value
+    largest_value = max(incoming_list)
+    return largest_value
     
 
 
 def find_least_number(incoming_list):
-    
-     value = min(incoming_list)
-     return value
+     smallest_value = min(incoming_list)
+     return smallest_value
   
 
 
 def add_list_numbers(incoming_list):
-    
-    value = sum(incoming_list)
-    return value
+    total_value = sum(incoming_list)
+    if incoming_list is not None:
+        return total_value
+    else:
+        return 0
    
 
 
 def longest_value_key(incoming_dict):
-    """
-    Required parameter, incoming_dict, should be a dict.
-    Find the KEY that has a value with the highest length, use the len() function
-    """
+    highest_length_key = max(incoming_dict, key=lambda k=len(incoming_dict[k]))
+    if len(incoming_dict) == 0:
+        return None
+    else:
+        return highest_length_key
     
