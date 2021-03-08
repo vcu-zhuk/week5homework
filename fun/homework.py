@@ -22,10 +22,11 @@ def add_list_numbers(incoming_list):
 
 
 def longest_value_key(incoming_dict):
-    if incoming_dict is not None:
-        if len(incoming_dict) == 0:
-            return None
-        longest_key = max(incoming_dict, key=lambda k: len(incoming_dict[k]))
-        return longest_key
-    else:
+    if incoming_dict is None:
         return None
+    else:
+        highest_length_key = max(incoming_dict, key=lambda k: len(incoming_dict[k]))
+        return highest_length_key
+        len(incoming_dict) == 0
+        return None
+    
