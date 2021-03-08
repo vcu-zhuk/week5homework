@@ -30,6 +30,4 @@ def longest_value_key(incoming_dict):
     Required parameter, incoming_dict, should be a dict.
     Find the KEY that has a value with the highest length, use the len() function
     """
-    assert incoming_list == [1, 2, 3, 4, 5, 6, 7, 8]
-    return_value = max(incoming_list)
-    return return_value
+    
