@@ -14,18 +14,18 @@ def find_least_number(incoming_list):
 
 
 def add_list_numbers(incoming_list):
+   
+    if incoming_list is None:
+        return 0
     total_value = sum(incoming_list)
     if incoming_list is not None:
         return total_value
-    else:
-        return 0
    
 
 
 def longest_value_key(incoming_dict):
-    highest_length_key = max(incoming_dict, key=lambda k=len(incoming_dict[k]))
     if len(incoming_dict) == 0:
         return None
-    else:
-        return highest_length_key
-    
+    highest_length_key = max(incoming_dict, key=lambda k=len(incoming_dict[k]))
+    return highest_length_key
+
