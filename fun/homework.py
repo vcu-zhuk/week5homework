@@ -21,4 +21,10 @@ def add_list_numbers(incoming_list):
    
 
 
-
+def longest_value_key(incoming_dict):
+    try:
+      return max(incoming_dict, key=lambda x:len(incoming_dict[x]))
+    except:
+      incoming_dict=None
+      return None
+    
