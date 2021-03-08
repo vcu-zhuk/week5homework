@@ -35,10 +35,10 @@ def add_list_numbers(incoming_list):
 
 def longest_value_key(incoming_dict):
     """
-    Required parameter, incoming_list, should be a list.
-    Add all the values together and return it.
+    Required parameter, incoming_dict, should be a dict.
+    Find the KEY that has a value with the highest length, use the len() function
     """
     if incoming_dict is None:
         return None
-    highest_length_key = max(incoming_dict, key=lambda k: len(incoming_dict[k]))
+    highest_length_key = max(len(x) for x in incoming_dict)
     return highest_length_key
